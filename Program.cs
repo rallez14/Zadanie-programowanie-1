@@ -201,5 +201,38 @@ n = Convert.ToUInt64(Console.ReadLine());
 n = n % 10;
 Console.WriteLine("Ostatnia cyfra tej liczby to: " + n);
 
+// Zadanie 11
+
+decimal t, u = 0; // t = x, u = y
+
+Console.Write("Podaj x: ");
+t = Convert.ToDecimal(Console.ReadLine());
+if (t < 2)
+{
+    u = t - 1;
+
+    if (t <= 1 & t >= -1)
+    {
+        u = 0;
+    }
+
+    if (t < -1 & t > -2)
+    {
+        u = t + 1;
+    }
+
+    if (t <= -2)
+    {
+        u = -1;
+    }
+}
+else if(t >= 2)
+{
+    u = 1;
+}
+
+Console.WriteLine("Dla x=" + t + " y=" + u);
+
+
 
 
